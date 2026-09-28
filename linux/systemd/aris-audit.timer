@@ -1,0 +1,10 @@
+[Unit]
+Description=Execution automatique de l'audit Python ARIS
+
+[Timer]
+OnBootSec=4min
+OnUnitActiveSec=15min
+Unit=aris-audit.service
+
+[Install]
+WantedBy=timers.target

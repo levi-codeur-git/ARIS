@@ -1,0 +1,7 @@
+[Unit]
+Description=ARIS Python System Auditor
+
+[Service]
+Type=oneshot
+User=levi-codeur
+ExecStart=/opt/aris/scripts/aris_audit.py

@@ -1,0 +1,25 @@
+# Rapports générés
+*.log
+reports/
+health_*.txt
+audit_*.txt
+
+# Sauvegardes
+*.tar.gz
+backups/
+
+# Fichiers temporaires
+*.tmp
+*.swp
+*~
+
+# Environnements Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Fichiers système / IDE
+.DS_Store
+.vscode/
+.idea/

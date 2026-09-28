@@ -1,0 +1,10 @@
+[Unit]
+Description=Execution automatique du health check ARIS
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=5min
+Unit=aris-health.service
+
+[Install]
+WantedBy=timers.target

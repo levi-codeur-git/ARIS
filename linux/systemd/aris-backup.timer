@@ -1,0 +1,10 @@
+[Unit]
+Description=Execution automatique du backup ARIS
+
+[Timer]
+OnBootSec=3min
+OnUnitActiveSec=30min
+Unit=aris-backup.service
+
+[Install]
+WantedBy=timers.target

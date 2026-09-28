@@ -1,0 +1,8 @@
+[Unit]
+Description=ARIS System Health Check
+After=network.target
+
+[Service]
+Type=oneshot
+User=levi-codeur
+ExecStart=/opt/aris/scripts/health_check.sh

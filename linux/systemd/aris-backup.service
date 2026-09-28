@@ -1,0 +1,7 @@
+[Unit]
+Description=ARIS Backup automatique
+
+[Service]
+Type=oneshot
+User=levi-codeur
+ExecStart=/opt/aris/scripts/backup.sh
