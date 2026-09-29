@@ -282,35 +282,55 @@ Les timers permettent l'exécution périodique des contrôles et sauvegardes.
 
 ```text
 ARIS/
-├── .gitignore
 ├── README.md
+├── .gitignore
 │
-├── docs/
-│   └── .gitkeep
+├── Phase-1-Cahier-des-Charges/
+│   ├── README.md
+│   └── screenshots/
 │
-├── network/
-│   └── .gitkeep
+├── Phase-2-Packet-Tracer/
+│   ├── README.md
+│   ├── screenshots/
+│   ├── configurations/
+│   └── fichiers-packet-tracer/
 │
-├── linux/
-│   ├── scripts/
-│   │   ├── aris_audit.py
-│   │   ├── backup.sh
-│   │   ├── cleanup_reports.sh
-│   │   └── health_check.sh
-│   │
-│   └── systemd/
-│       ├── aris-audit.service
-│       ├── aris-audit.timer
-│       ├── aris-backup.service
-│       ├── aris-backup.timer
-│       ├── aris-health.service
-│       └── aris-health.timer
+├── Phase-3-Linux/
+│   ├── README.md
+│   ├── screenshots/
+│   ├── configurations/
+│   └── scripts/
 │
-├── security/
-│   └── .gitkeep
+├── Phase-4-Services/
+│   ├── README.md
+│   ├── screenshots/
+│   ├── configurations/
+│   └── scripts/
 │
-└── screenshots/
-    └── .gitkeep
+├── Phase-5-Supervision/
+│   ├── README.md
+│   ├── screenshots/
+│   └── scripts/
+│
+├── Phase-6-Securite/
+│   ├── README.md
+│   ├── screenshots/
+│   ├── configurations/
+│   └── scripts/
+│
+├── Phase-7-Automatisation/
+│   ├── README.md
+│   ├── screenshots/
+│   ├── bash/
+│   └── python/
+│
+├── Phase-8-Git-GitHub/
+│   ├── README.md
+│   └── screenshots/
+│
+└── Phase-9-Presentation/
+    ├── README.md
+    └── screenshots/
 ```
 
 Les rapports générés, sauvegardes, fichiers temporaires et autres données non destinées au versionnement sont exclus du dépôt avec `.gitignore`.
@@ -366,6 +386,12 @@ Les rapports générés, sauvegardes, fichiers temporaires et autres données no
 
 ---
 
+### Limitation d’intégration 
+
+L’infrastructure réseau a été conçue et validée dans Cisco Packet Tracer, tandis que l’infrastructure serveur Linux a été déployée et testée dans VMware Workstation Pro. Les deux environnements sont opérationnels, mais n’ont pas pu être interconnectés directement en raison des limitations de Packet Tracer en tant que simulateur. Une intégration directe aurait nécessité l’utilisation d’un environnement d’émulation réseau tel que GNS3/EVE-NG et la reproduction d’une partie de l’infrastructure réseau.
+
+---
+
 ## État du projet
 
 | Phase | Domaine                             | État        |
@@ -376,28 +402,15 @@ Les rapports générés, sauvegardes, fichiers temporaires et autres données no
 |     4 | Services réseau                     | ✅ Terminée  |
 |     5 | Supervision & automatisation        | ✅ Terminée  |
 |     6 | Sécurité & durcissement             | ✅ Terminée  |
-|     7 | Versionnement Git / GitHub          | 🔄 En cours |
+|     7 | Versionnement Git / GitHub          | 🔄 En cours  |
 |     8 | Documentation & présentation finale | ⏳ À venir   |
-
----
-
-## Roadmap
-
-Les prochaines étapes du projet sont notamment :
-
-* versionner proprement l'ensemble des éléments pertinents ;
-* documenter les configurations ;
-* ajouter les schémas et captures utiles ;
-* améliorer progressivement la sécurité ;
-* enrichir la supervision ;
-* poursuivre l'évolution de l'infrastructure ;
-* préparer une présentation complète du projet.
 
 ---
 
 ## Auteur
 
 **Mame Cheikh Ibrahima Fall NDOYE**
+Eleve à l'Ecole Supérieure Polytechnique (ESP) de Dakar au département Génie Informatique, filière Réseaux & Télécommmunictions
 
 Projet personnel réalisé dans le cadre du développement de compétences en :
 
