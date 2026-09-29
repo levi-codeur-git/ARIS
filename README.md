@@ -204,7 +204,7 @@ Plusieurs scripts Python et Bash ont été développés afin d'automatiser les t
 ### Audit système
 
 ```text
-linux/scripts/aris_audit.py
+Phase-7-Automatisation/scripts/aris_audit.py
 ```
 
 Le script contrôle notamment :
@@ -220,7 +220,7 @@ Un rapport est généré automatiquement dans le répertoire des rapports.
 ### Health check
 
 ```text
-linux/scripts/health_check.sh
+Phase-7-Automatisation/scripts/health_check.sh
 ```
 
 Le script vérifie :
@@ -241,7 +241,7 @@ Il retourne un code permettant d'identifier les états :
 ### Sauvegarde
 
 ```text
-linux/scripts/backup.sh
+Phase-7-Automatisation/scripts/backup.sh
 ```
 
 Le script réalise une sauvegarde des scripts et rapports ARIS et conserve les **5 dernières sauvegardes**.
@@ -249,7 +249,7 @@ Le script réalise une sauvegarde des scripts et rapports ARIS et conserve les *
 ### Nettoyage des rapports
 
 ```text
-linux/scripts/cleanup_reports.sh
+Phase-7-Automatisation/scripts/cleanup_reports.sh
 ```
 
 Le script permet de conserver les 20 derniers rapports de chaque type :
