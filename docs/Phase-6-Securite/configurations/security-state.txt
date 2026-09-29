@@ -1,0 +1,41 @@
+========================================
+ARIS - SECURITY STATE
+========================================
+
+Date : mar. 29 sept. 2026 03:16:51 UTC
+
+===== UFW =====
+Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), disabled (routed)
+New profiles: skip
+
+To                         Action      From
+--                         ------      ----
+22/tcp on ens33            ALLOW IN    192.168.63.0/24           
+80/tcp on ens33            ALLOW IN    192.168.63.0/24           
+53/tcp on ens33            ALLOW IN    192.168.63.0/24           
+53/udp on ens33            ALLOW IN    192.168.63.0/24           
+139/tcp on ens33           ALLOW IN    192.168.63.0/24           
+445/tcp on ens33           ALLOW IN    192.168.63.0/24           
+22/tcp on ens37            ALLOW IN    192.168.99.0/24           
+80/tcp on ens37            ALLOW IN    192.168.99.0/24           
+53/tcp on ens37            ALLOW IN    192.168.99.0/24           
+53/udp on ens37            ALLOW IN    192.168.99.0/24           
+139/tcp on ens37           ALLOW IN    192.168.99.0/24           
+445/tcp on ens37           ALLOW IN    192.168.99.0/24           
+19999/tcp on ens37         ALLOW IN    192.168.99.0/24           
+
+
+===== FAIL2BAN =====
+Status
+|- Number of jail:	1
+`- Jail list:	sshd
+
+===== SSHD EFFECTIVE CONFIG =====
+port 22
+maxauthtries 3
+permitrootlogin no
+pubkeyauthentication yes
+passwordauthentication no
+x11forwarding yes
