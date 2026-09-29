@@ -282,60 +282,40 @@ Les timers permettent l'exécution périodique des contrôles et sauvegardes.
 
 ```text
 ARIS/
-├── README.md
 ├── .gitignore
+├── README.md
 │
 ├── Phase-1-Cahier-des-Charges/
 │   ├── README.md
 │   └── screenshots/
-│
 ├── Phase-2-Packet-Tracer/
 │   ├── README.md
 │   ├── screenshots/
-│   ├── configurations/
 │   └── fichiers-packet-tracer/
-│
 ├── Phase-3-Linux/
 │   ├── README.md
-│   ├── screenshots/
-│   ├── configurations/
-│   └── scripts/
-│
+│   └── screenshots/
 ├── Phase-4-Services/
 │   ├── README.md
-│   ├── screenshots/
-│   ├── configurations/
-│   └── scripts/
-│
+│   └── screenshots/
 ├── Phase-5-Supervision/
 │   ├── README.md
-│   ├── screenshots/
-│   └── scripts/
-│
+│   └── screenshots/
 ├── Phase-6-Securite/
 │   ├── README.md
 │   ├── screenshots/
-│   ├── configurations/
-│   └── scripts/
-│
+│   └── configurations/
 ├── Phase-7-Automatisation/
 │   ├── README.md
 │   ├── screenshots/
-│   ├── bash/
-│   └── python/
-│
+│   ├── scripts/
+│   └── configurations/
 ├── Phase-8-Git-GitHub/
 │   ├── README.md
 │   └── screenshots/
-│
 └── Phase-9-Presentation/
     ├── README.md
     └── screenshots/
-```
-
-Les rapports générés, sauvegardes, fichiers temporaires et autres données non destinées au versionnement sont exclus du dépôt avec `.gitignore`.
-
----
 
 ## Technologies
 
